@@ -1,0 +1,29 @@
+.purple-p{
+    color: #6B267F;
+}
+
+
+.description-p{
+    color: #375281;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+.sectionHeader1{
+    font-family: "Lora", serif;
+}
+
+.purpleButton {
+    margin:  15px 15px 15px 0;
+    padding: 10px 30px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #6B267F;
+    color: white;
+    font-weight: 500;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.purpleButton:hover {
+    scale: 1.1;
+}

@@ -1,0 +1,92 @@
+.footer {
+    padding: 60px 20px;
+    background-color: #24272c;
+    color: #ffffff;
+}
+
+
+
+.footer .logo-text {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #41d36c;
+}
+
+.footer .logo-subtext {
+    font-size: 0.875rem;
+    color: #ccc;
+}
+
+.footer .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #ffffff;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #1f2227;
+    transition: 0.2s ease-in-out;
+}
+
+.footer .social-icons a:hover {
+    background-color: var(--accent-color);
+}
+
+.footer h6 {
+    font-weight: 600;
+    margin-bottom: 20px;
+    
+}
+
+
+
+.footerServices ul {
+    list-style: none;
+    padding-left: 7px;
+}
+
+.footerServices ul li {
+    margin-top: 2%;
+}
+
+.footerServices ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    position: relative;
+}
+
+.footerServices ul li a::after {
+    content: "";
+    height: 2px;
+    background-color: var(--accent-color);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.footerServices ul li a:hover {
+    color: var(--accent-color);
+}
+
+.footerServices ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+.footerServices ul li a:not(:hover)::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+.footerServices ul li a.active {
+    color: var(--accent-color)
+}
+
+.footerInfo ul li{
+    margin-bottom: 1.5%;
+}

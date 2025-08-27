@@ -1,0 +1,77 @@
+.logo {
+  text-decoration: none;
+  font-size: 30px;
+  color: black;
+}
+
+#header{
+    border-bottom: 1px solid rgb(236, 236, 236);
+    
+}
+
+nav {
+    height: 100px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin-bottom: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    height: 2px;
+    background-color: #6B267F;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #6B267F;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+nav ul li a:not(:hover)::after {
+    transform: scaleX(0);
+    transform-origin: right;
+}
+
+nav ul li a.active {
+    color: #6B267F
+}
+
+.contactButton {
+    margin: 15px;
+    padding: 10px 30px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 500;
+    border: none;
+    transition: 0.2s ease-in-out;
+}
+
+.contactButton:hover {
+    scale: 1.1;
+}
